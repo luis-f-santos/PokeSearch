@@ -8,6 +8,7 @@ target 'PokeSearch' do
   # Pods for PokeSearch
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'GeoFire', '~> 3.0'
 
 
 end
