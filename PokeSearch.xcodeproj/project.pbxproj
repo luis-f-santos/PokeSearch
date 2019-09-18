@@ -15,6 +15,7 @@
 		BFC3FBFA232216DE003EF03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC3FBF8232216DE003EF03C /* LaunchScreen.storyboard */; };
 		BFC3FC05232216DE003EF03C /* PokeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC3FC04232216DE003EF03C /* PokeSearchTests.swift */; };
 		BFC3FC1023221933003EF03C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC3FC0F23221930003EF03C /* GoogleService-Info.plist */; };
+		BFF17AF123275F5A001ECBE0 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF17AF023275F5A001ECBE0 /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BFC3FC04232216DE003EF03C /* PokeSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSearchTests.swift; sourceTree = "<group>"; };
 		BFC3FC06232216DE003EF03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC3FC0F23221930003EF03C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFF17AF023275F5A001ECBE0 /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 		BFC3FBEE232216DE003EF03C /* PokeSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BFF17AEF23275F26001ECBE0 /* Model */,
+				BFF17AEE23275F19001ECBE0 /* Controller */,
 				BFC3FBEF232216DE003EF03C /* AppDelegate.swift */,
-				BFC3FBF1232216DE003EF03C /* ViewController.swift */,
 				BFC3FBF3232216DE003EF03C /* Main.storyboard */,
 				BFC3FBF6232216DE003EF03C /* Assets.xcassets */,
 				BFC3FBF8232216DE003EF03C /* LaunchScreen.storyboard */,
@@ -113,6 +116,22 @@
 				BFC3FC06232216DE003EF03C /* Info.plist */,
 			);
 			path = PokeSearchTests;
+			sourceTree = "<group>";
+		};
+		BFF17AEE23275F19001ECBE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3FBF1232216DE003EF03C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFF17AEF23275F26001ECBE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFF17AF023275F5A001ECBE0 /* PokeAnnotation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F8E5B8B1F79E751C3B1791EF /* Frameworks */ = {
@@ -230,15 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PokeSearch-checkManifestLockResult.txt",
 			);
@@ -252,8 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PokeSearch/Pods-PokeSearch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -261,8 +274,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC3FBF2232216DE003EF03C /* ViewController.swift in Sources */,
+				BFF17AF123275F5A001ECBE0 /* PokeAnnotation.swift in Sources */,
 				BFC3FBF0232216DE003EF03C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
